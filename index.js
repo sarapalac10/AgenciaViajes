@@ -1,7 +1,13 @@
 import express from 'express';
 import router from './routes/index.js';
+import db from './config/db.js';
 
 const app = express();
+
+//Conectar a la bd
+db.authenticate()
+    .then( ()=> console.log('Base de datos conectada exitosamente'))
+    .catch( error => console.log(error));
 
 //Definir puerto
 const port = process.env.PORT || 4000;

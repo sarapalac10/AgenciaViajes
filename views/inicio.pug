@@ -1,6 +1,33 @@
 extends ./layout/index
 
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
 block contenido
     main.container.mt-5
-        .row
-            h1 #{pagina}
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Cat ipsum dolor sit amet, make muffins your pillow is now my pet bed love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater). Jump off balcony, onto stranger's head hate dog. Check cat door for ambush 10 times before coming in destroy couch as revenge claws in the eye of the beholder for really likes hummus. 
+                p  i rule on my back you rub my tummy i bite you hard. Scratch at the door then walk away sniff other cat's butt and hang jaw half open thereafter or ooooh feather moving feather! attack feet, but catch small lizards, bring them into house, then unable to find them on carpet eats owners hair then claws head so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Your pillow is now my pet bed always hungry that box? 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen inicio nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 10% de descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de marzo de 2023 - 28 de marzo de 2023
+                        p.precio $2,250 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+
+        include ./layout/bloque_testimoniales
